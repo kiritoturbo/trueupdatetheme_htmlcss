@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="robots" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Dolab : Dolab Personal Banking Admin Bootstrap 5 Template">
+	<meta property="og:title" content="Dolab : Dolab Personal Banking Admin Bootstrap 5 Template">
+	<meta property="og:description" content="Dolab : Dolab Personal Banking Admin Bootstrap 5 Template">
+	<meta property="og:image" content="https://dolab. DexignZone.com/xhtml/social-image.png">
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- PAGE TITLE HERE -->
+	<title>Dolab Personal Banking Admin</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<link href="vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+	<link href="vendor/jquery-autocomplete/jquery-ui.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .infor_user{
+            background-color: #fff;
+            box-shadow: 0 0 2px 0 rgba(145, 158, 171, .2), 0 12px 24px -4px rgba(145, 158, 171, .12);
+            color:#000;
+            gap: 12px;
+            border-radius: 4px;
+        }
+        .image_user{
+            
+            background-color: #000 !important;
+            border-color: #000 !important;
+            border-radius: 50%;
+        }
+        .image_user img{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .infor_user {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .wrap_infor span{
+            display: block;
+        }
+        .wrap_infor span:first-child{
+            font-weight: 600;
+            font-size: 17px;
+            text-transform: capitalize;
+        }
+        .wrap_infor span:last-child{
+            font-weight: 300;
+            font-size: 14px;
+            color: rgba(0, 0, 0, .87);;
+        }
+        .wrap_domain_store{
+            color: rgba(0, 0, 0, .87) !important;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .wrap_domain_store .item_domain{
+            background-color: #fff;
+            padding: 12px 16px;
+            border-radius: 4px;
+            min-height: 48px;
+            color: #000;
+            margin-bottom: 15px;
+
+        }
+        .wrap_domain_store::-webkit-scrollbar {
+            width:5px;
+        }
+        .wrap_domain_store::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+            }
+        .button_select{
+
+        }
+        .link_select{
+            width: 100%;
+            height: 100%;
+        }
+        .link_select span{
+            color: #000;
+        }
+        .link_select .logo_left{
+            padding: 8px;
+            background-color: #f3f3f3 !important;
+            border-color: #f3f3f3 !important;
+            border-radius: 8px;
+            margin-right: 16px;
+        }
+        .link_select .domain_name{
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: lowercase;
+        }
+        .btn-logout{
+            height: 36px;
+            min-width: 64px;
+            padding: 0 16px;
+            background-color: #ff0000 !important;
+            border-color: #ff0000 !important;
+            font-weight: 700;
+            border-radius: 10px;
+            letter-spacing: normal;
+            text-transform: capitalize;
+            color: white;
+        }
+        .auth-form .btn{
+            font-size: 17px;
+        }
+        .auth-form .logo img{
+            width: 182px;
+        }
+    </style>
+</head>
+<body class="body  h-100">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100 align-items-center">
+                <div class=" col-md-6">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="auth-form">
+                                <div class="logo d-flex justify-content-between w-100 align-items-center ">
+                                    <img src="images/True.png" alt="">
+                                    <button class="btn-logout">Sign Out</button>
+
+                                </div>
+                                <div class="wrap-select">
+                                    
+                                    <div class="infor_user d-flex justify-content-start align-items-center p-3">
+                                        <div class="image_user">
+                                            <img src="https://accounts.dcomcy.com/admin/img/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center w-100">
+                                            <div class="wrap_infor">
+                                                <span class="name_user">Lê đình Tùng</span>
+                                                <span class="email_user">manhtruong2001nt@gmail.com</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="button_select btn btn-primary btn-block my-3">Select Store</button>
+                                    <ul class="wrap_domain_store">
+                                        <li class="item_domain">
+                                            <a href="#" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item_domain">
+                                            <a href="" class="link_select d-flex justify-content-start align-items-center">
+                                                <span class="logo_left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    aria-hidden="true" role="img" width="26" height="26" viewBox="0 0 24 24" 
+                                                    class=""><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M3.794 12.03C4.331 9.342 4.6 8 5.487 7.134a4 4 0 0 1 .53-.434C7.04 6 8.41 6 11.15 6h1.703c2.739 0 4.108 0 5.13.7q.285.196.53.435C19.4 8 19.67 9.343 20.207 12.03c.771 3.856 1.157 5.784.269 7.15q-.241.373-.56.683C18.75 21 16.785 21 12.853 21H11.15c-3.933 0-5.899 0-7.065-1.138a4 4 0 0 1-.559-.683c-.888-1.366-.502-3.294.27-7.15Z"></path><circle cx="15" cy="9" r="1" fill="currentColor"></circle><circle cx="9" cy="9" r="1" fill="currentColor"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9 6V5a3 3 0 1 1 6 0v1"></path></g></svg>
+                                                </span>
+                                                <div class="wrapper_arrow d-flex justify-content-between w-100">
+                                                    <span class="domain_name">marketmarvelus.com</span>
+                                                    <span class="arrow_right">></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
